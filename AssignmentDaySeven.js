@@ -70,32 +70,40 @@ else console.log("the season is Summer");
 
 //Check if a day is weekend day or a working day. Your script will take day as an input.
 const day='Monday';
-switch(day){
-    case "Monday" :
+switch(day.toLowerCase()){
+    case "monday" :
         console.log("Working Day")
         break;
     
-    case "Tuesday":
+    case "tuesday":
         console.log("Working Day")
         break;
     
-    case "Wednesday":
+    case "wednesday":
         console.log("Working Day")
         break;
     
-    case "Thrusday":
+    case "thrusday":
         console.log("Working Day")
         break;
     
-    case "Friday":
+    case "friday":
+        console.log("Week Day");
+        break;
+    case "saturday":
         console.log("Weekend");
         break;
+    case "sunday":
+        console.log("Weekend");
+        break;
+
     default:
-        console.log("Weekend");
+        console.log("Invaid");
 }
 
 //Write a program which tells the number of days in a month.
-const monthName='February';
+const months='February'
+const monthName=months.toLowerCase();
 const year=1800;
 let isLeap;
 if(monthName==='January' || monthName==="March" || monthName==='may'|| monthName==='July' || monthName==='August'|| monthName==='October' || monthName==='December'){
