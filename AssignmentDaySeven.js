@@ -55,15 +55,15 @@ else console.log('F');
 // December, January or February, the season is Winter.
 // March, the season is Spring
 //  April, May, June, July or August, the season is Summer
-
-const month="April";
-if(month==="September" || month==="October" || month==="November"){
+const currentMonth="April";
+const month= currentMonth.toLowerCase();
+if(month==="september" || month==="october" || month==="november"){
     console.log("The season is rainy");
 }
-else if(month==="December" || month==="January" || month==="February"){
+else if(month==="december" || month==="january" || month==="february"){
     console.log("The season is Winter");
 }
-else if(month==="March"){
+else if(month==="march"){
     console.log("the season is Spring");
 }
 else console.log("the season is Summer");
