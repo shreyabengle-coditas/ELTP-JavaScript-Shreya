@@ -106,10 +106,10 @@ const months='February'
 const monthName=months.toLowerCase();
 const year=1800;
 let isLeap;
-if(monthName==='January' || monthName==="March" || monthName==='may'|| monthName==='July' || monthName==='August'|| monthName==='October' || monthName==='December'){
+if(monthName==='january' || monthName==="march" || monthName==='may'|| monthName==='july' || monthName==='august'|| monthName==='october' || monthName==='december'){
     console.log(`31 days in ${monthName}`);
 }
-else if(monthName !="February"){
+else if(monthName !="february"){
     console.log(`30 days in ${monthName}`);
 }
 else {
