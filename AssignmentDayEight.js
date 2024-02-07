@@ -11,7 +11,7 @@ console.log(rollNumbers[0],rollNumbers[Math.round((rollNumbers.length-1)/2)],rol
 const mixedDataTypes=[1,'shreya',[],7,[[]],'array'];
 console.log(mixedDataTypes.length);
 // Declare an array variable name itCompanies and assign initial values Coditas, Google, Microsoft, Apple, IBM, Oracle and Amazon
-const itCompanies=['Coditas','Google','Microsoft','Apple','IBM','Oracle','Amazon','hp'];
+const itCompanies=['Coditas','Google','Microsoft','Apple','IBM','Oracle','Amazon'];
 // Print the array using console.log()
 console.log(itCompanies);
 // Print the number of companies in the array
@@ -33,6 +33,14 @@ if(itCompanies.includes(companyName)){
 }else console.log("company not found");
 
 // Filter out companies which have more than one 'o' without the filter method
+const filteredArray=[];
+for(let index=0;index<itCompanies.length;index++){
+    if(itCompanies[index].includes('oo')){
+        filteredArray.push(itCompanies[index]);
+    }
+}
+console.log(filteredArray);
+
 
 // Sort the array using sort() method
 console.log(itCompanies.sort());
@@ -148,15 +156,16 @@ console.log(maxElement);
 const range=maxElement-minElement;
 console.log(range);
 
-console.log(Math.abs(minElement-avg));
-console.log(Math.abs(maxElement-avg))
-// Compare the value of (min - average) and (max - average), use abs() method 1.Slice the first ten countries from the countries array
-// 30. Find the middle countries in the countries array.
 
+// Compare the value of (min - average) and (max - average), use abs() method
+console.log(Math.abs(minElement-avg));
+console.log(Math.abs(maxElement-avg));
+
+// 30. Find the middle countries in the countries array.
 if(countries.length%2)
     console.log(countries[Math.floor(countries.length/2)])
 else
-    console.log(countries[(countries.length)/2], countries[(countries.length-2)/2])
+    console.log(countries[(countries.length)/2], countries[(countries.length-1)/2])
 
 // 31. Divide the countries array into two equal arrays if it is even. If countries array is not even , one more country for the first half
 // ARRAYS:
@@ -210,5 +219,5 @@ const country = [
     secondHalf = country.slice(Math.ceil(country.length / 2));
   }
   
-  console.log("First half of countries:", firstHalf);
-  console.log("Second half of countries:", secondHalf);
+  console.log(`First half of countries: ${firstHalf}`);
+  console.log(`Second half of countries: ${secondHalf}`);
